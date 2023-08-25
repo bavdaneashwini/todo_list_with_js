@@ -37,16 +37,7 @@
         </div>
       </div>
       <div class="col-12 col-md-8 col-lg-8 border rounded p-4" id="todo_list">
-        <!-- <div class="todo-item p-4 bg-light border border-light card">
-          <div class="">
-            <h4 style="float:left" class="m-0 p-0">Todo 1</h4>
-            <div style="float:right">
-              <i style="cursor: pointer" class="far fa-pen-to-square"></i>
-              <i style="cursor: pointer" class="fas text-danger fa-trash"></i>
-            </div>
-          </div>
-          <small class="">Today 8:00 pm</small>
-        </div> -->
+
       </div>
     </div>
 
@@ -62,16 +53,9 @@
 
 
     <script>
-      // function add_todo(event){
-      //   event.preventDefault();
-      //   return false;
-      //   alert('hello'); 
-
-      // }
 
       var count=1
       function add_todo(title,date_time){
-        // alert('hello');
         document.getElementById("todo_list").innerHTML += `
                                                         <div id="todo_${count}" class="todo-item my-2 p-4 bg-light border border-light card">
                                                           <div class="">
@@ -93,7 +77,6 @@
         add_todo(title,date_time);
         event.preventDefault();
         document.getElementById("todo-form").reset();
-        // alert('ashwini');
       });
 
       function delete_todo(id){
